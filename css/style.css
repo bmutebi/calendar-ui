@@ -1,0 +1,168 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: lightgray;
+}
+
+.page {
+	max-width: 40%;
+	box-shadow: -2px 5px 9px 3px rgba(0,0,0,.1);
+	margin: 0 auto;
+	background-color: #fff;
+	border-radius: 15px;
+	margin-top: 6em;
+	padding: 15px 40px;
+}
+
+.page-right {
+	max-width: 30%;
+	float: right;
+}
+
+.month {
+	font-family: Constantia;
+	font-weight: lighter;
+	margin-left: 12px;
+	color: darkorange;
+	letter-spacing: 5px;
+}
+
+.year {
+	font: italic large Candara;
+}
+
+table, #time, .temp {
+	font-family: Candara;
+}
+
+td, th {
+	padding: 8px;
+	text-align: center;
+}
+
+thead {
+	font-size: small;
+	color: grey;
+}
+
+.old-month {
+	color: lightgrey;
+}
+
+.appointment {
+	color: #000;
+	border-bottom: 1px solid orange;
+	font-weight: bolder;
+}
+
+#time, .temp {
+	font-size: x-large;
+	color: darkorange;
+	margin: 2em 0 1.2em .5em;
+}
+
+.img {
+	width: 100%; 
+	height: auto; 
+	position: relative; 
+	left:2%; 
+	top:-300px;"
+}
+
+.temp {
+	 position: relative; 
+	 left: 85%; 
+	 top: -55px; 
+	 margin: 0;
+}
+
+/*.circle {
+	content: '\25cf';
+	font-size: 200px;
+	color: orange;
+}*/
+
+/*========================================
+Media Queries
+==========================================*/
+
+@media screen and (max-width:600px) and (min-width:200px){
+	.page{
+	max-width: 100%;
+	}
+}
+
+@media screen and (max-width:800px) and (min-width:599px){
+	.page{
+	max-width: 75%;
+	}
+}
+
+@media screen and (max-width:999px) and (min-width:801px){
+	.page{
+	max-width: 65%;
+	}
+}
+
+@media screen and (max-width:1200px){
+	.page{
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width:980px){
+	.page{
+		max-width: 70%;
+	}
+}
+
+@media screen and (max-width:720px){
+	.page{
+		max-width: 75%;
+	}
+}
+
+@media screen and (max-width:675px){
+	.page{
+		max-width: 90%;
+	}
+}
+
+@media screen and (max-width:550px){
+	.page{
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width:498px){
+	.page{
+		margin-top: 3em;
+	}
+	.img {
+		display: none
+	}
+	.temp {
+		left: 75%;
+	}
+}
+
+@media screen and (max-width:386px){
+	.page{
+		padding: 7px 20px;
+		margin-top: 2em;
+	}
+	.temp {
+		left: 70%;
+	}
+}
+
+@media screen and (max-width:344px){
+	.page{
+		padding: 4px 2px;
+		margin-top: 1em;
+	}
+}
